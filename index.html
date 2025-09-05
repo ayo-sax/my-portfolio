@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gideon's Portfolio</title>
+  <link rel="icon" href="image/IMG-20250807-WA0012.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Gideon</div>
+
+      
+      <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<ul class="nav-links" id="nav-links">
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+      <button id="toggle-theme">🌙</button>
+
+      
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+  <div class="hero-content">
+    <h1>Hello, I'm <span class="highlight">Gideon</span></h1>
+    <p>I’m a <span class="typed-text"></span></p>
+    <a href="#projects" class="btn">See My Work</a>
+  </div>
+</section>
+
+
+
+<section id="about" class="about" data-aos="fade-right">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <div class="about-img">
+      <img src="image/20250831_161813.jpg" alt="Kuye Gideon">
+    </div>
+    <div class="about-text">
+      <p>
+        Hi, I’m <span class="name">Kuye Gideon</span> — a passionate 
+        <strong>Frontend Developer</strong> who loves turning ideas into clean, 
+        responsive, and user-friendly websites. I specialize in 
+        <b>HTML, CSS, JavaScript, and Bootstrap</b>, creating 
+        modern designs with smooth interactivity.  
+      </p>
+      <p>
+        Beyond coding, I find inspiration in <em>music</em> and 
+        <em>church rehearsals</em>, which fuel my creativity and discipline 
+        as a developer. Every project is an opportunity to craft something 
+        impactful and memorable.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills" data-aos="fade-up">
+  <div class="container">
+    <h2>Skills & Specialties</h2>
+    <p class="skills-sub">
+      I specialize in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>Bootstrap</strong> — crafting fast, responsive UIs with clean, maintainable code.
+    </p>
+
+    <div class="skill-tags" role="list">
+      <a class="tag" role="listitem" href="#projects" aria-label="HTML projects" title="HTML">
+        <i class="fa-brands fa-html5" aria-hidden="true"></i>
+        <span>HTML</span>
+        <small class="tag-note">semantic markup • SEO-friendly</small>
+      </a>
+
+      <a class="tag" role="listitem" href="#projects" aria-label="CSS projects" title="CSS">
+        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+        <span>CSS</span>
+        <small class="tag-note">responsive layouts • animations</small>
+      </a>
+
+      <a class="tag" role="listitem" href="#projects" aria-label="JavaScript projects" title="JavaScript">
+        <i class="fa-brands fa-js" aria-hidden="true"></i>
+        <span>JavaScript</span>
+        <small class="tag-note">DOM logic • APIs</small>
+      </a>
+
+      <a class="tag" role="listitem" href="#projects" aria-label="Bootstrap projects" title="Bootstrap">
+        <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+        <span>Bootstrap</span>
+        <small class="tag-note">utility-first • rapid UI</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects" data-aos="fade-up">
+  <h2>Recent Works</h2>
+  <div class="project-grid">
+    <div class="project-card" data-aos="zoom-in">
+  <img src="image/Screenshot 2025-09-05 010335.jpg" alt="SchoolPro Website Screenshot">
+  <h3>School Management System</h3>
+  <p>A school portal with management features.</p>
+  <a href="https://schoolpro1.netlify.app" target="_blank" class="btn-small">View Project</a>
+</div>
+
+<div class="project-card" data-aos="zoom-in">
+  <img src="image/Screenshot 2025-09-05 010439.jpg" alt="Giddy's Gym Website Screenshot">
+  <h3>Gym Website</h3>
+  <p>A fitness website with a BMI calculator and payment page.</p>
+  <a href="https://giddys-gym.netlify.app" target="_blank" class="btn-small">View Project</a>
+</div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio showcasing my journey and skills.</p>
+        <a href="#" class="btn-small">This Site</a>
+      </div>
+    </div>
+
+    <!-- Case Study: SchoolPro -->
+<div class="case-study" data-aos="fade-up">
+  <h3>SchoolPro (Case Study)</h3>
+  <p><strong>Problem:</strong> Schools needed a simple system to manage students and staff effectively.</p>
+  <p><strong>Process:</strong> I designed a responsive UI, built with HTML, CSS, and JavaScript, and ensured smooth navigation and accessibility.</p>
+  <p><strong>Solution:</strong> A functional school management portal with login, student records, and responsive dashboards.</p>
+  <a href="https://schoolpro1.netlify.app" target="_blank" class="btn-small">View Live</a>
+</div>
+
+<!-- Case Study: Giddy's Gym -->
+<div class="case-study" data-aos="fade-up">
+  <h3>Giddy’s Gym (Case Study)</h3>
+  <p><strong>Problem:</strong> Many gyms lack a professional online presence and tools to engage potential clients.</p>
+  <p><strong>Process:</strong> I created a dynamic fitness website with a responsive layout, background video, BMI calculator, and an online payment page.</p>
+  <p><strong>Solution:</strong> A modern gym website that motivates users with visuals, provides a useful BMI tool, and enables seamless membership payments.</p>
+  <a href="https://giddys-gym.netlify.app" target="_blank" class="btn-small">View Live</a>
+</div>
+  </section>
+
+  <!-- Timeline Section (PUT HERE) -->
+<section id="timeline" class="timeline" data-aos="fade-up">
+  <h2>My Journey</h2>
+  <div class="timeline-container">
+
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>2025 July — Started Web Development</h3>
+        <p>I began my journey into web development, learning the fundamentals of HTML and CSS while building small practice projects.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>2025 August — Built SchoolPro</h3>
+        <p>Created a school management system that helped simplify administrative tasks, marking my first big real-world project.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>2025 September — Launched Giddy’s Gym</h3>
+        <p>Designed a professional fitness website with a BMI calculator and online payment options, taking my frontend skills to the next level.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>2025 September — Portfolio Website</h3>
+        <p>Created this portfolio site to showcase my projects, skills, and journey as a frontend developer.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <section id="stats" class="stats" data-aos="fade-up">
+  <h2>My Achievements</h2>
+  <div class="stats-grid">
+    <div class="stat">
+      <span class="counter" data-target="5">0</span><p>Projects Completed</p>
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="100">0</span><p>Hours of Coding per month</p>
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="3">0</span><p>Technologies Mastered</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" data-aos="fade-left">
+  <h2>What People Say</h2>
+  <div class="testimonial">
+    <p>"Gideon is dedicated and passionate about web development. His designs are fresh, responsive, and functional."</p>
+    <span>- Client/Colleague Feedback</span>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+<div class="socials">
+  <a href="https://github.com/ayo-sax" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.instagram.com/kuyegideon25/" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/kuye-gideon/" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Gideon. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+<button id="backToTop" title="Go to top">↑</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration (ms)
+    once: true      // whether animation should happen only once
+  });
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
