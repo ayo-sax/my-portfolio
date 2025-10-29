@@ -72,3 +72,19 @@ window.addEventListener("scroll", () => {
 backToTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+const form = document.querySelector("form");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      alert("Message sent successfully! Thank you for reaching out.");
+      form.reset();
+    } else {
+      alert("Oops! Something went wrong. Please try again later.");
+    }
+  });
