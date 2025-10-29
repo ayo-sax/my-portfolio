@@ -217,10 +217,16 @@
 
 <section id="contact" class="contact">
   <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/xnnovlpv" method="POST">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
+    <form action="https://formspree.io/f/xnnovlpv" method="POST" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <input type="hidden" name="_subject" value="New Message from Portfolio Website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_autoresponse" 
+        value="Hi {{name}}, thanks for contacting me! I’ve received your message and will reply shortly. — Gideon">
       <button type="submit">Send</button>
     </form>
 <div class="socials">
